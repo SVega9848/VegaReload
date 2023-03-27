@@ -2,7 +2,7 @@ main: SVega9848\VegaReload\Loader
 version: 1.0.0
 name: VegaReload
 api: [4.0.0]
-author: SVega9848
+authors: [SVega9848, UnknownNull]
 website: https://www.youtube.com/@Jayseba04
 
 permissions:
