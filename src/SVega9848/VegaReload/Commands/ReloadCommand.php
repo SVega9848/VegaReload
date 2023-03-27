@@ -20,7 +20,6 @@ class ReloadCommand extends Command implements PluginOwned {
 
         $plugin = $this->getOwningPlugin();
 
-        if($sender instanceof Player) {
             if($sender->hasPermission("vegareload.cmd")) {
                 foreach(Loader::getInstance()->getServer()->getPluginManager()->getPlugins() as $plugin) {
                     Loader::getInstance()->getServer()->getPluginManager()->disablePlugin($plugin);
@@ -30,9 +29,6 @@ class ReloadCommand extends Command implements PluginOwned {
             } else {
                 $sender->sendMessage(TextFormat::RED. "You do not have permissions to use this command");
             }
-        } else {
-            $sender->sendMessage(TextFormat::RED. "Execute this command in-game");
-        }
     }
 
     public function getOwningPlugin(): Plugin {
