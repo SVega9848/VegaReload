@@ -5,4 +5,5 @@ branches:
 projects:
   VegaReload:
     path: ""
+    icon: "icon.png"
 ...
